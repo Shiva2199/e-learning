@@ -9,6 +9,23 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Update Contact Form</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+   }
+   table
+   {
+   border-collapse: collapse;
+    border: 1px solid black; 
+    width: 100%;
+}
+h2, h3, pre {text-align: center;}
+
+body {
+	
+  background-color:  lightyellow ;
+}
+</style>
 </head>
 <body>
 	<h2>Update Contact</h2>
@@ -16,7 +33,7 @@
 	<c:url var="updateUrl" value="/update-contact"></c:url>
 	<form:form action="${updateUrl }" method="post" modelAttribute="contact">
 		<pre>
-	User Id 		   :<form:input path="userId" readonly /> 	
+	User Id 		   :<form:input path="userId" readonly="true" /> 	
 			<br>
  	Name  			  :<form:input path="Name" />
 			<br>

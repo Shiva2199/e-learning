@@ -4,6 +4,25 @@
 <html>
 <title>Home page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<head>
+	<style>
+table, th, td {
+  border: 1px solid black;
+   }
+   table
+   {
+   border-collapse: collapse;
+    border: 1px solid black; 
+    width: 100%;
+}
+h2, h3, pre {text-align: center;}
+
+body {
+	
+  background-color:  lightyellow ;
+}
+</style>
+</head>
 <body>
 	<h2>${message }</h2>
 	<hr>

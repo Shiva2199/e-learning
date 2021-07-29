@@ -9,23 +9,43 @@
 <meta http-equiv="Content-Type"
 	content="text/html; charset=windows-1256">
 <title>Login Page</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+   }
+   table
+   {
+   border-collapse: collapse;
+    border: 1px solid black; 
+    width: 100%;
+}
+h2, h3, pre {text-align: center;}
+
+body {
+	
+  background-color:  lightyellow ;
+}
+</style>
 </head>
 
 <body>
 	<form:form action="LoginServlet" method="POST" modelAttribute="login">
+		<fieldset>
+		<legend>Enter User Credentials</legend>
 		<pre>
-			Please enter your ID 		
-			<form:input path="loginId" />
-			<br>
-			Please enter your Email 		
-			<form:input path="email" />
+		
+					
+		Please enter  ID	<form:input path="loginId" />
+				<br>
+						
+		Please enter Email    <form:input path="email" />
 			<br>		
 		
-			Please enter your Password
-			<form:password path="password" />
+		Please enter Password <form:password path="password" />
 			<br>	
-			<input type="submit" value="submit" />			
+			<input type="submit" value="Login" />			
 		</pre>
+		</fieldset>
 	</form:form>
 	<hr>
 

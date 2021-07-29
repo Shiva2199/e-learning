@@ -6,6 +6,23 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Course List</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+   }
+   table
+   {
+   border-collapse: collapse;
+    border: 1px solid black; 
+    width: 100%;
+}
+h2, h3, pre {text-align: center;}
+
+body {
+	
+  background-color:  lightyellow ;
+}
+</style>
 </head>
 <body>
 
@@ -31,5 +48,7 @@
 			</tr>
 		</c:forEach>
 	</table>
+	<hr>
+	<a href="addCourse" >Add Course</a>
 </body>
 </html>
